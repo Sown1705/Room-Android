@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <data>
+        <variable
+            name="user"
+            type="com.vincenzocassown.roomlesson01.model.User" />
+    </data>
+<LinearLayout
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="@{user.name}"
+            android:hint="Name"
+            android:id="@+id/tvName"
+            android:textSize="25dp"
+            android:layout_width="850px"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@{user.address}"
+            android:textColor="@android:color/darker_gray"
+            android:hint="Address"
+            android:id="@+id/tvAddress"
+            android:textSize="18dp"
+            android:layout_width="850px"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="UPDATE"
+            android:hint="Name"
+            android:id="@+id/tvUpdate"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="DELETE"
+            android:textColor="@android:color/darker_gray"
+            android:hint="Address"
+            android:id="@+id/tvDelete"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</layout>
